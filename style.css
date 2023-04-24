@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Georgia;
+
+}
+form{
+    padding: 20px;
+    border-bottom: 1px solid #333; 
+}
+input{
+    display: block; 
+    font-family: Georgia;
+    text-align: center;
+    -webkit-appearance: none; 
+    appearance: none; /* borra informacion de estilo del navegador*/
+
+} 
+form input[type="text"]{
+    width: 600px;
+    border: none;
+    border-bottom: 1px solid #333;
+    padding: 5px;
+    margin: 0 auto;
+}
+form input[type="submit"]{
+    width: 100px;
+    background-color: white;
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: #333;
+    padding: 10px 0;
+    margin: 20px auto 0;
+    cursor: pointer;
+}
+.tareas{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.tarea{ /*componente tarea*/
+    border: solid #333;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.tarea h3, .tarea input{
+    display: none;
+    width: 100%;
+    color: #333;
+    font-weight: normal;
+    text-align: left;
+    border: none;
+    font-size: 1.5em;
+}
+.tarea input{
+    border-bottom: 1px solid #555;
+}
+.tarea .visible{
+    display: block;
+}
+.tarea button{
+    display: block;
+    margin-top: 20px;
+}
+.tarea button:not(:last-child){
+    margin-right: 20px;
+}
+
+.boton{
+    width: 70px;
+    background-color: white;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid #333;
+    border-radius: 15px;
+}
+.estado{
+    width: 60px;
+    height: 30px;
+    background-color: #777;
+    border-radius: 15px;
+    position: relative;
+    border: none;
+}
+.estado span{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #c00;
+    position:absolute;
+    top: 0;
+    left: 0;
+    transition:left 0.6s, background-color 0.4s;
+}
+.terminada span{
+    left: 30px;
+    background-color: #0e0;
+}
